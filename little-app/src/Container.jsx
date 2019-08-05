@@ -1,15 +1,26 @@
 import React from 'react';
-import SpecialButton from './SpecialButton'
-import AnotherButton from './AnotherButton'
+
+//código para la manera imperative o pasando refs al DOM
+/* class Container extends React.Component {
+    render(){
+        return (
+            <div style={{backgroundColor: this.props.color}}>Texto</div>
+        )
+    }
+} */
 
 class Container extends React.Component {
     render(){
         return (
-            <SpecialButton>
-                <AnotherButton/>
-            </SpecialButton>
+            <div>Texto</div>
         )
     }
 }
+
+/* const Container = props => {
+    return (
+        <div ref={props.containerRef}>Texto</div>
+    )
+} */
 
 export default Container

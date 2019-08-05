@@ -6,7 +6,7 @@ class AnotherButton extends React.Component {
     }
     render(){
         return (
-            <button>valor por defecto</button>
+            <button onClick= {this.props.onClick}>clica para cambiar el color</button>
         )
     }
     
